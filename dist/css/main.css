@@ -142,34 +142,45 @@ body {
 #showcase-2 .showcase .showcase__section-1 {
   order: 1; }
 
-#carousel-slider .slide {
-  padding: 3rem 0;
-  display: flex;
-  flex-direction: column;
+.testemonial__head {
+  padding-top: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center; }
+
+#carousel-slider {
   width: 60%;
   margin: 0 auto;
-  align-items: center;
-  text-align: center; }
-  #carousel-slider .slide .slide__head {
-    font-size: 2rem;
-    font-weight: bold;
-    text-transform: capitalize; }
-  #carousel-slider .slide .slide__img {
-    padding: 2rem 0;
-    overflow: hidden; }
-    #carousel-slider .slide .slide__img img {
-      width: 10rem;
-      height: auto;
-      border-radius: 50%; }
-  #carousel-slider .slide .slide__description {
-    padding: 0 0 1rem;
-    font-style: italic;
-    color: #6C757D; }
-  #carousel-slider .slide .slide__info .person-name {
-    font-size: 1.1rem; }
-  #carousel-slider .slide .slide__info .person-designation {
-    padding: .5rem 0;
-    font-size: .9rem; }
+  display: flex;
+  overflow: hidden; }
+  #carousel-slider .slide {
+    padding: 1rem 0 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-shrink: 0;
+    height: 400px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    transition: transform .4s ease-in-out; }
+    #carousel-slider .slide .slide__img {
+      padding: 2rem 0;
+      overflow: hidden; }
+      #carousel-slider .slide .slide__img img {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%; }
+    #carousel-slider .slide .slide__description {
+      padding: 0 0 1rem;
+      font-style: italic;
+      color: #6C757D; }
+    #carousel-slider .slide .slide__info .person-name {
+      font-size: 1.1rem; }
+    #carousel-slider .slide .slide__info .person-designation {
+      padding: .5rem 0;
+      font-size: .9rem; }
 
 #team-section {
   display: flex;
@@ -189,7 +200,7 @@ body {
       padding: 0 2rem; }
       #team-section #team-section__body .team-member img {
         width: 11rem;
-        height: auto;
+        height: 11rem;
         border-radius: 50%; }
       #team-section #team-section__body .team-member .team-member__name {
         font-size: 1rem;
@@ -205,7 +216,6 @@ body {
   flex-direction: column;
   align-items: center;
   width: 60%;
-  border: 2px solid red;
   margin: 2rem auto; }
   #contact-section .contact-sec__header {
     font-size: 2rem;
@@ -219,7 +229,71 @@ body {
       margin: .5rem 0;
       padding: 8px 10px;
       width: 100%;
-      box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.25);
-      border: 1px solid #cccccc;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+      border: 1px solid #f4f4f4;
       border-radius: 5px;
       outline: none; }
+    #contact-section #form #form-submit {
+      text-align: center;
+      padding: 2rem 0; }
+      #contact-section #form #form-submit button {
+        width: 14rem;
+        height: 2.6rem;
+        background-color: #007fff;
+        border: none;
+        outline: none;
+        overflow: hidden;
+        border-radius: 2rem;
+        color: #ffffff; }
+      #contact-section #form #form-submit button:hover {
+        cursor: pointer; }
+
+#subscribe-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0; }
+  #subscribe-section #subscribe-section__header {
+    font-size: 2rem; }
+  #subscribe-section p {
+    color: #6C757D;
+    padding: .5rem 0; }
+  #subscribe-section .input-group {
+    width: 26rem;
+    padding: 1.5rem 0;
+    display: inline-flex;
+    justify-content: center; }
+    #subscribe-section .input-group input {
+      padding: 0 1rem;
+      width: 70%;
+      height: 2.5rem;
+      border: 1px solid #ccc;
+      border-right: none;
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem; }
+    #subscribe-section .input-group button {
+      width: 30%;
+      padding: 0 1rem;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      outline: none;
+      border: none;
+      background-color: #007fff;
+      color: #ffffff; }
+  #subscribe-section .social-links i {
+    margin: 0 .2rem;
+    background-color: brown;
+    width: 2.1rem;
+    height: 2rem;
+    padding: .5rem 0;
+    border-radius: 50%;
+    text-align: center; }
+
+#footer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  background-color: brown; }
+  #footer-section p {
+    color: #ffffff; }
